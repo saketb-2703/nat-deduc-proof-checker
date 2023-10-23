@@ -31,8 +31,11 @@ Discrete Mathematics, Compiler Construction, (some) Development
 New to it too :/ But [this](https://www.freecodecamp.org/news/making-vscode-extension/) makes it look straightforward :)
 
 #### 4. Usage
-1. Copy the folder `proofchecker` into the directory `/Users/$(USER)/.vscode/extensions/`. This will enable the plug-ins for VS-code like syntax-highlighting and automatic syntax-completions.
-2. 
+1. Copy the folder `extensions/nat-deduc-ext` into the directory `/Users/<user_name>/.vscode/extensions/`. This will enable the plug-ins such as syntax-highlighting and automatic syntax-completions for VS-code.
+2. Create a python virtual environment.
+    1. Run `python3 venv -m <env_name>`
+    2. Run `source <env_name>/bin/activate`
+3. Create your own proof-checking `.ndp` files. To start the proof-checker, Run `make file=<file_name>.ndp` . A `sample.ndp` file has been provided for your reference. Run `make file=sample.ndp` to see the result.
 
 ----
 
