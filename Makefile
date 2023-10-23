@@ -1,3 +1,3 @@
 compile:
-	python3 "proofchecker/parser.py" $(file)
+	python3 "src/parser.py" $(file)
 	

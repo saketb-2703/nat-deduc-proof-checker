@@ -30,6 +30,10 @@ Discrete Mathematics, Compiler Construction, (some) Development
 - Publish the proof checker as a VSCode extension.
 New to it too :/ But [this](https://www.freecodecamp.org/news/making-vscode-extension/) makes it look straightforward :)
 
+#### 4. Usage
+1. Copy the folder `proofchecker` into the directory `/Users/$(USER)/.vscode/extensions/`. This will enable the plug-ins for VS-code like syntax-highlighting and automatic syntax-completions.
+2. 
+
 ----
 
 #### Mentor
