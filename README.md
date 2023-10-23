@@ -36,18 +36,3 @@ New to it too :/ But [this](https://www.freecodecamp.org/news/making-vscode-exte
     1. Run `python3 venv -m <env_name>`
     2. Run `source <env_name>/bin/activate`
 3. Create your own proof-checking `.ndp` files. To start the proof-checker, Run `make file=<file_name>.ndp` . A `sample.ndp` file has been provided for your reference. Run `make file=sample.ndp` to see the result.
-
-----
-
-#### Mentor
-Aryan Gupta (Ph: 7506115192, Email: f20190017@goa.bits-pilani.ac.in / aryan.gupta8501@gmail.com)
-
-#### Faculty Supervisor
-[Dr. Anup B Mathew](https://www.bits-pilani.ac.in/goa/anupm/profile)
-
-#### Contributors
-- Harshit Samar (2020A7PS0964G)
-- Saket B (2020A7PS0983G)
-- Atharva Limaye (2020A7PS1721G)
-
-----
