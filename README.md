@@ -32,7 +32,8 @@ New to it too :/ But [this](https://www.freecodecamp.org/news/making-vscode-exte
 
 #### 4. Usage
 1. Copy the folder `extensions/nat-deduc-ext` into the directory `/Users/<user_name>/.vscode/extensions/`. This will enable the plug-ins such as syntax-highlighting and automatic snippet-completions for VS-code.
-2. Create a python virtual environment.
+2. Create a python virtual environment and install sly package.
     1. Run `python3 venv -m <env_name>`
     2. Run `source <env_name>/bin/activate`
-3. Create your own proof-checking `.ndp` files. To start the proof-checker, Run `make file=<file_name>.ndp` . A `sample.ndp` file has been provided for your reference. Run `make file=sample.ndp` to see the result.
+    3. Run `pip3 install sly`
+3. Create your own proof-checking `.ndp` files inside the `proofs/inputs/` directory. To start the proof-checker, Run `make file=<file_name>.ndp` . The outputs will be stored inside the `proofs/outputs/` dirctory under the name `<file_name>_verified.txt`. A `sample.ndp` file has been provided for your reference. Run `make file=sample.ndp` to see the result stored in `proofs/outputs/sample_verified.txt`.

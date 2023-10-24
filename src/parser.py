@@ -1,5 +1,6 @@
 from sly import Parser
 from lexer import proofChecker
+import sys
 
 class PCParser(Parser):
 
@@ -274,9 +275,18 @@ class PCParser(Parser):
 if __name__ == '__main__':
     lexer = proofChecker()
     parser = PCParser()
-    fname = "sample.ndp"
-    with open(fname, 'r') as fileh:
-        lines = fileh.readlines()
+    input_file_name = sys.argv[1]
+    input_file_path = f"proofs/inputs/{input_file_name}"
+
+    # Redirect stdout to a file
+    output_file_name = input_file_name.strip(".ndp")
+    output_file_name = f"{output_file_name}_verified.txt"
+    output_file_path = f"proofs/outputs/{output_file_name}"
+    output_file = open(output_file_path, "w")
+    sys.stdout = output_file
+
+    with open(input_file_path, 'r') as file:
+        lines = file.readlines()
         line_count = 1
         for line in lines:
             try:
@@ -285,3 +295,7 @@ if __name__ == '__main__':
                 print("[syntax error] in line #{0}: {1}".format(line_count,line))
                 break
             line_count+=1
+
+    # Close the output file and restore sys.stdout
+    output_file.close()
+    sys.stdout = sys.__stdout__
